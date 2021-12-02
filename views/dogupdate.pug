@@ -9,11 +9,11 @@ block content
   - let breed = toShow.breed 
   - let price = toShow.price
   - let colour = toShow.colour
-   
+       
   div.row(class='mb-2') 
     div.mr-1 ID is 
     div #{costumeid} 
-  - let actionid = "/resource/dog/" + dogid 
+  - let actionid = "/resource/dogs/" + dogid 
   form(id='dogForm', action= actionid, method="PUT") 
     div.form-group 
         label.dogAttr(for='breed') Breed

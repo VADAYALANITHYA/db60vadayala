@@ -56,7 +56,7 @@ ${JSON.stringify(req.body)}`)
         let toUpdate = await Dog.findById( req.params.id) 
         // Do updates of properties 
         if(req.body.breed)  
-               toUpdate.breed = req.body.breed; 
+                toUpdate.breed = req.body.breed; 
         if(req.body.price) toUpdate.price = req.body.price; 
         if(req.body.size) toUpdate.colour = req.body.colour; 
         let result = await toUpdate.save(); 

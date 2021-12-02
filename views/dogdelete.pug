@@ -9,21 +9,21 @@ block content
     - let breed = toShow.breed 
     - let price = toShow.price
     - let colour = toShow.colour
-    - let actionid = "/resource/dog/" + costumeid 
+    - let actionid = "/resource/dog/" + dogid 
     script let actionid = "#{actionid}" 
     div 
-      div.row 
-        div(class='dogAttr mr-3') Dog ID is: 
-        div #{dogid} 
-      div.row 
-        div(class='dogAttr mr-3') Breed is: 
-        div #{breed} 
-      div.row 
-        div(class='dogAttr mr-3') Price is: 
-        div #{price} 
-      div.row 
-        div(class='dogAttr mr-3') Colour is: 
-        div #{colour} 
+    div.row 
+      div(class='dogAttr mr-3') Dog ID is: 
+      div #{dogid} 
+    div.row 
+      div(class='dogAttr mr-3') Dog Breed is: 
+      div #{breed} 
+    div.row 
+      div(class='dogAttr mr-3') Dog Price is: 
+      div #{price} 
+    div.row 
+      div(class='dogAttr mr-3') Dog Colour is: 
+      div #{colour} 
  
     button(class="btn btn-danger m-2" onclick="deleteOnid()") Delete 
     button(class="btn btn-secondary m-2" onclick="cancel()") Cancel 

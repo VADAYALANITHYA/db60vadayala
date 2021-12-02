@@ -1,5 +1,5 @@
 {
-  "name": "fwb60vadayala",
+  "name": "fwb38vissapragada",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -17,6 +17,6 @@
     "passport": "^0.5.0",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^6.1.0",
-    "pug": "2.0.0-beta11"
+    "pug": "^3.0.2"
   }
 }

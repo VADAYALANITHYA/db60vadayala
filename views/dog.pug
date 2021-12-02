@@ -9,13 +9,20 @@ block content
     div(class = "row m-1")
      each i,index in dogs
       -let destination = `dispatch(\"/dog/update?id=${i._id}\")`
+      -let destination1 = `dispatch(\"/dog/create?id=${i._id}\")`
+      -let destination2 = `dispatch(\"/dog/delete?id=${i._id}\")`
+      -let destination3 = `dispatch(\"/dog/detail?id=${i._id}\")` 
      
         div(class="row-sm-2", class="m-1") Item #{i.breed}(#{i.price}) is #{i.colour} 
-            button.btn( class="btn-primary ml-1", onclick= destination) Update 
+            button.btn( class="btn-primary ml-1", onclick= destination) Update
+            button.btn( class="btn-primary ml-1", onclick= destination1) Create
+            button.btn( class="btn-primary ml-1", onclick= destination2) Delete 
+            button.btn( class="btn-primary ml-1", onclick= destination3) Detail 
         script.
                 function buy(itemNo){
                     alert(`You purchased item ${itemNo+1}`)
                 }
                 function dispatch(path){ 
                 window.location.href=path 
-                }
+                } 
+   
